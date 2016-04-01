@@ -1,9 +1,8 @@
 Subl
 Atom
 urxvt
-gruvbox/base16
-arc
-xenlism
+gruvbox/base16-eighties
+arc/xenlism
 super flat remix
 i3
 i3gaps
@@ -13,11 +12,8 @@ i3blocks
 i3lemon??
 VIM-R maybe
 rofi
-Font-Awesome
-Overpass
-Fantasque Sans Mono
+Font-Awesome/Overpass/Fantasque Sans Mono
 ncmpcpp
-gnome-terminal-colors??
 lxappearance
 xrandr, arandr
 thunar
