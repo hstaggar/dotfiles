@@ -1,7 +1,7 @@
 Subl
 Atom
 urxvt
-gruvbox
+gruvbox/base16
 arc
 xenlism
 super flat remix
@@ -15,9 +15,14 @@ VIM-R maybe
 rofi
 Font-Awesome
 Overpass
+Fantasque Sans Mono
 ncmpcpp
 gnome-terminal-colors??
 lxappearance
 xrandr, arandr
 thunar
 feh
+Infinality
+zsh
+Ohmyzsh
+Powerline
