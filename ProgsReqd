@@ -1,16 +1,10 @@
-Subl
-Atom
-urxvt
+Sublime <- Material Theme, Linter, Git, GitGutter, BracketHighlighter, REPL 
+urxvt <- matcher, tabbedex
 gruvbox/base16-eighties
-arc/xenlism
+arc/xenlism/elementary dark OS
 super flat remix
-i3
-i3gaps
-i3lock
-lemonbar
-i3blocks
-i3lemon??
-VIM-R maybe
+i3, i3gaps, i3lock, i3blocks
+VIM-R
 rofi
 Font-Awesome/Overpass/Fantasque Sans Mono
 ncmpcpp
@@ -19,6 +13,8 @@ xrandr, arandr
 thunar
 feh
 Infinality
-zsh
-Ohmyzsh
-Powerline/airline
+fish
+ohmyfish <- agnoster, git-flow
+Vim-Airline
+evince
+neofetch
