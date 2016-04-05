@@ -1,4 +1,4 @@
-Sublime <- Material Theme, Linter, Git, GitGutter, BracketHighlighter, REPL 
+Sublime <- Material Theme, Linter(lintr, pyflakes), Git, GitGutter, BracketHighlighter, REPL 
 urxvt <- matcher, tabbedex
 gruvbox/base16-eighties
 arc/xenlism/elementary dark OS
