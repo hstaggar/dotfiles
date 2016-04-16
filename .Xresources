@@ -53,14 +53,15 @@ URxvt*color21:                        #e8e6df
 
 ! Personal Customizations
 
-URxvt.perl-ext-common:		      default,matcher
+URxvt.perl-ext-common:			resize-font,default,matcher,fullscreen
 
-!URxvt.keysym.F11: 					  perl:fullscreen:switch
+! Matcher
+URxvt.url-launcher:			/usr/bin/firefox
+URxvt.matcher.button:			1
 
-!URxvt.resize-font.smaller: 			  C-Down
-!URxvt.resize-font.bigger:  			  C-Up
+URxvt.keysym.F11:			perl:fullscreen:switch
 
+URxvt.resize-font.smaller: 		C-Down
+URxvt.resize-font.bigger:  		C-Up
 
-!URxvt.url-launcher:        			  /usr/bin/firefox
-
-!URxvt.colorUL: #7780a1
+URxvt.colorUL: #7780a1
