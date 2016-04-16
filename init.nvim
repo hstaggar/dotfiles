@@ -1,0 +1,128 @@
+set shell=bash
+set number
+" set nocompatible              " be iMproved, required
+filetype off                  " required
+syntax enable
+filetype plugin on
+filetype indent on
+set laststatus=2
+
+" -------------------------------------------------------------------
+
+" Vundle Crap
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+" Virtualenv Python
+Plugin 'jmcantrell/vim-virtualenv'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+Plugin 'L9'
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Avoid a name conflict with L9
+" Plugin 'user/L9', {'name': 'newL9'}
+" gruvbox color scheme
+Plugin 'morhetz/gruvbox'
+" base16 color scheme
+Plugin 'chriskempson/base16-vim'
+"vim-airline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+" Syntax checking
+Plugin 'scrooloose/syntastic'
+" For commenting
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'kristijanhusak/vim-hybrid-material'
+"R Plugin for VIM. Too easy now
+Plugin 'jalvesaq/Nvim-R'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+" ------------------------------------------------------------------
+
+set backspace=indent,eol,start
+
+let maplocalleader = ","
+let mapleader = ";"
+
+" Use Ctrl+Space to do omnicompletion:
+if has("gui_running")
+	inoremap <C-Space> <C-x><C-o>
+else
+   	inoremap <Nul> <C-x><C-o>
+endif
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
+" Press the space bar to send lines and selection to R:
+vmap <Space> <Plug>RDSendSelection
+nmap <Space> <Plug>RDSendLine
+"The lines below are suggestions for Vim in general and are not
+" specific to the improvement of the Vim-R-plugin.
+"
+" Highlight the last searched pattern:
+set hlsearch
+
+" Show where the next pattern is as you type it
+set incsearch
+
+" By default, Bim indents code by 8 spaces. Most people prefer 4 spaces:
+set sw=4
+
+"For 256 colors
+"set t_Co=256
+set background=dark    " Setting dark mode
+" let base16colorspace=256
+colorscheme gruvbox
+" colorscheme hybrid_material
+" colorscheme base16-eighties
+let rout_follow_colorscheme = 1
+"set t_ut=
+"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+let g:base16_shell_path="~/base16-builder/output/shell/"
+
+" Vim-Airline tries
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_font=1
+let g:airline_theme='gruvbox'
+" let g:airline_theme="hybrid"
+let g:enable_bold_font = 1
+
+" Powerline symbols
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
+
+" ----------------------------------------------------------------

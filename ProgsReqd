@@ -1,20 +1,13 @@
-Sublime <- Material Theme, Linter(lintr, pyflakes), Git, GitGutter, BracketHighlighter, REPL 
-urxvt <- matcher, tabbedex
-gruvbox/base16-eighties
-arc/xenlism/elementary dark OS
+Atom <- terminal-plus, Material Theme/syntax, Repl, fonts, git-plus, git-time-machine, language-r, linter(chktex,lintr,markdown),markdown-preview-plus,minimap
+urxvt <- resize-font,default,matcher,fullscreen
+NVIM <- All in init.nvim
+Paper/arc/elementary dark OS/iris
 super flat remix
-i3, i3gaps, i3lock, i3blocks
-VIM-R
-rofi
+i3, i3gaps, i3lock, i3blocks, shutdown-menu script
+rofi, feh, thunar, compton, Infinality
 Font-Awesome/Overpass/Fantasque Sans Mono
-ncmpcpp
+mpd/ncmpcpp
 lxappearance
 xrandr, arandr
-thunar
-feh
-Infinality
-fish
-ohmyfish <- agnoster, git-flow
-Vim-Airline
+fish/omf <- git-flow
 evince
-neofetch
