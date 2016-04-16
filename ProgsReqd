@@ -1,3 +1,4 @@
+YAOURT
 Atom <- terminal-plus, Material Theme/syntax, Repl, fonts, git-plus, git-time-machine, language-r, linter(chktex,lintr,markdown),markdown-preview-plus,minimap
 urxvt <- resize-font,default,matcher,fullscreen
 NVIM <- All in init.nvim
